@@ -78,10 +78,10 @@ const renderNewMovieElement = (id, title, imageUrl, rating) => {
       <p>${rating}/5 stars</p>
     </div>
   `;
-  newMovieElement.addEventListener(
-    'click',
-    startDeleteMovieHandler.bind(null, id)
-  );
+  // newMovieElement.addEventListener(
+  //   'click',
+  //   startDeleteMovieHandler.bind(null, id)
+  // );
   const listRoot = document.getElementById('movie-list');
   listRoot.append(newMovieElement);
 };
